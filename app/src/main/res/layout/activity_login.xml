@@ -6,28 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="16dp"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome!"
+        android:text="TRY LOGIN"
         android:gravity="center_horizontal"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginBottom="30dp" />
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_session"
-        android:text="xxxxxxxx"
-        android:gravity="center_horizontal"
-        android:textSize="20sp" />
+        android:id="@+id/et_username"
+        android:hint="username"
+        android:inputType="text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_pwd"
+        android:hint="password"
+        android:inputType="textPassword" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_logout"
-        android:text="LOGOUT"
+        android:id="@+id/btn_login"
+        android:text="LOGIN"
         android:textStyle="bold"
         android:layout_marginTop="30dp"
-        android:onClick="logoutProcess" />
+        android:onClick="loginProcess" />
 </LinearLayout>
