@@ -33,6 +33,14 @@ public class LoginActivity extends AppCompatActivity
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
+        else if (username.trim().equals(""))
+        {
+            etUsername.setError("Username tidak boleh kosong!");
+        }
+        else if (pwd.trim().equals(""))
+        {
+            etPwd.setError("Password tidak boleh kosong!");
+        }
         else
         {
             Toast.makeText(this, "Login Error!", Toast.LENGTH_SHORT).show();
